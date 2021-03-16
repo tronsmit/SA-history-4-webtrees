@@ -24,9 +24,6 @@ use Illuminate\Support\Collection;
 /**
  * Class SAHistory
  *
- * return new class extends AbstractModule implements ModuleCustomInterface, ModuleHistoricEventsInterface {
- *     use ModuleCustomTrait;
- *     use ModuleHistoricEventsTrait;
  */
 return new class extends AbstractModule implements ModuleCustomInterface, ModuleHistoricEventsInterface {
     use ModuleCustomTrait;
@@ -60,8 +57,7 @@ return new class extends AbstractModule implements ModuleCustomInterface, Module
     public function historicEventsAll(): Collection
     {
         return new Collection([
-            //"1 EVEN Elizabeth II\n2 TYPE British Queen\n2 DATE FROM 06 FEB 1952",
-            // Epidemics
+             // Epidemics
             "1 EVEN Smallpox\n2 TYPE Epidemic\n2 DATE 16 MAR 1713\n2 NOTE Smallpox epidemic breaks out at the Cape Colony. Source: [Wikipedia](https://en.wikipedia.org/wiki/1710s_in_South_Africa)",
             "1 EVEN Smallpox\n2 TYPE Epidemic\n2 DATE 1 MAY 1755\n2 NOTE Smallpox epidemic breaks out at Cape Colony. A total of 2,372 people die. Source: [Wikipedia](https://en.wikipedia.org/wiki/1750s_in_South_Africa)",
             "1 EVEN Influenza\n2 TYPE Epidemic\n2 DATE FROM 1857 TO 1859\n2 NOTE In 1857-1859, there was an extremely severe worldwide outbreak of influenza. Source: [Wikipedia](https://goo.gl/XVwD6F)",
@@ -96,6 +92,7 @@ return new class extends AbstractModule implements ModuleCustomInterface, Module
             "1 EVEN Union of South Africa\n2 TYPE Historical Event\n2 DATE 31 MAY 1910\n2 NOTE Union of South Africa established. Source: [Wikipedia](https://en.wikipedia.org/wiki/Union_of_South_Africa)",
             "1 EVEN Republic of South Africa\n2 TYPE Historical Event\n2 DATE 31 MAY 1961\n2 NOTE South Africa becomes a republic. Source: [Wikipedia](https://en.wikipedia.org/wiki/1961_in_South_Africa)",
             "1 EVEN First General Elections\n2 TYPE Historical Event\n2 PLAC South Africa\n2 DATE 27 APR 1994\n2 NOTE Source: [Wikipedia](https://en.wikipedia.org/wiki/South_African_general_election,_1994)",
+            "1 EVEN Nelson Mandela released from prison\n2 TYPE Historical Event\n2 DATE 11 FEB 1990\n2 NOTE Source: [Wikipedia](https://en.wikipedia.org/wiki/1990_in_South_Africa)",
             // Natural disasters
             "1 EVEN Drought\n2 TYPE Natural disaster\n2 DATE 1809\n2 NOTE A severe drought occurs in the eastern frontier region. Source: [Wikipedia](https://en.wikipedia.org/wiki/1809_in_South_Africa)",
             // Economic Events
@@ -121,8 +118,7 @@ return new class extends AbstractModule implements ModuleCustomInterface, Module
             "1 EVEN Dutch East India Company goes bankrupt\n2 TYPE Historical Event\n2 DATE 1795\n2 NOTE The Dutch East India Company is in financial ruins. 29 January – Farmers expelled the officials of the Dutch East India Company and established an independent government at Graaff Reinet. 18 June - Swellendam follows Graaff Reinet and declares a republic under Hermanus Steyn. The Netherlands is invaded by the French under the leadership of Napoléon Bonaparte. A republic is declared by Dutch revolutionaires and the Prince of Orange flees to England. 16 September – British forces under General Sir James Henry Craig seizes the Cape Colony for the Stadtholder Prince William V of Orange. The republics of Graaff Reinet and Swellendam reject the British and the British army is sent in. The start of free trade was announced. Source: [Wikipedia](https://en.wikipedia.org/wiki/1790s_in_South_Africa)",
             "1 EVEN British settlers\n2 TYPE Historical Event\n2 DATE 1820\n2 NOTE 17 March - The first British settlers arrived in Table Bay, Cape Town on the *Nautilus* and the *Chapman*. 1 May - The *Albury* reaches Cape Town bringing settlers to Albany, South Africa. They arrive in Algoa Bay on 15 May. 2 May - *La Belle Alliance* reached Cape Town. She brought British settlers to Algoa Bay. 4000 British settlers started arriving in Algoa Bay (Port Elizabeth), they settled in Grahamstown and along the frontier. Source: [Wikipedia](https://en.wikipedia.org/wiki/1820_in_South_Africa)",
             "1 EVEN Great trek\n2 TYPE Historical Event\n2 DATE 1835\n2 NOTE *Voortrekkers* start leaving the Cape Colony. Source: [Wikipedia](https://en.wikipedia.org/wiki/1835_in_South_Africa)",
-            // Presidents and change
-            "1 EVEN Nelson Mandela released from prison\n2 TYPE Historical Event\n2 DATE 11 FEB 1990\n2 NOTE [Wikipedia](https://en.wikipedia.org/wiki/1990_in_South_Africa)",
+            // Presidents
         ]);
     }
 };
