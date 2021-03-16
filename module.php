@@ -48,7 +48,17 @@ return new class extends AbstractModule implements ModuleCustomInterface, Module
     {
         return false;
     }
-    
+
+    /**
+     * The version of this module.
+     *
+     * @return string  e.g. '1.2.3'
+     */
+    public function customModuleVersion(): string
+    {
+        return '1.0';
+    }
+
     /**
      * A URL that will provide the latest version of this module.
      *
@@ -56,7 +66,7 @@ return new class extends AbstractModule implements ModuleCustomInterface, Module
      */
     public function customModuleLatestVersionUrl(): string
     {
-        return '';
+        return 'https://github.com/tronsmit/SA-history-4-webtrees/blob/main/version.txt';
     }
 
     /**
