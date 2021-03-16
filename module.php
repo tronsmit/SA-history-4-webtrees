@@ -48,6 +48,16 @@ return new class extends AbstractModule implements ModuleCustomInterface, Module
     {
         return false;
     }
+    
+    /**
+     * A URL that will provide the latest version of this module.
+     *
+     * @return string
+     */
+    public function customModuleLatestVersionUrl(): string
+    {
+        return '';
+    }
 
     /**
      * All events provided by this module.
