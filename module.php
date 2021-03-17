@@ -66,7 +66,7 @@ return new class extends AbstractModule implements ModuleCustomInterface, Module
      */
     public function customModuleLatestVersionUrl(): string
     {
-        return 'https://raw.githubusercontent.com/tronsmit/SA-history-4-webtrees/main/version.txt';
+        return 'https://raw.githubusercontent.com/tronsmit/SA-history-4-webtrees/main/latest-version.txt';
     }
 
     /**
