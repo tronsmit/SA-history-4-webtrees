@@ -50,6 +50,26 @@ return new class extends AbstractModule implements ModuleCustomInterface, Module
     }
 
     /**
+     * The person or organisation who created this module.
+     *
+     * @return string
+     */
+    public function customModuleAuthorName(): string
+    {
+        return 'Chris Theron';
+    }
+
+    /**
+     * Where to get support for this module.  Perhaps a github repository?
+     *
+     * @return string
+     */
+    public function customModuleSupportUrl(): string
+    {
+        return 'https://github.com/tronsmit/SA-history-4-webtrees';
+    }
+
+    /**
      * The version of this module.
      *
      * @return string  e.g. '1.2.3'
