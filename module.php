@@ -170,7 +170,8 @@ return new class extends AbstractModule implements ModuleCustomInterface, Module
             "1 EVEN Pieter Willem Botha\n2 TYPE Prime minister\n2 DATE FROM 9 OCT 1978 TO 14 SEP 1984\n2 Source: [Wikipedia](https://en.wikipedia.org/wiki/Prime_Minister_of_South_Africa)",           
             // Executive presidents pre 1994
             "1 EVEN Pieter Willem Botha\n2 TYPE Executive President\n2 DATE FROM 14 SEP 1984 TO 15 AUG 1989\n2 Source: [Wikipedia](https://en.wikipedia.org/wiki/State_President_of_South_Africa#List_of_state_presidents_of_South_Africa)",           
-            "1 EVEN Jan Christiaan Heunis\n2 TYPE Executive President (acting)\n2 DATE FROM 19 JAN 1989 TO 15 AUG 1989\n2 Source: [Wikipedia](https://en.wikipedia.org/wiki/State_President_of_South_Africa#List_of_state_presidents_of_South_Africa)",           
+            "1 EVEN Jan Christiaan Heunis\n2 TYPE Executive President (acting)\n2 DATE FROM 19 JAN 1989 TO 15 MAR 1989\n2 Source: [Wikipedia](https://en.wikipedia.org/wiki/State_President_of_South_Africa#List_of_state_presidents_of_South_Africa)",           
+            "1 EVEN Frederik Willem de Klerk\n2 TYPE Executive President\n2 DATE FROM 15 AUG 1989 TO 10 MAY 1994\n2 Source: [Wikipedia](https://en.wikipedia.org/wiki/State_President_of_South_Africa#List_of_state_presidents_of_South_Africa)",           
             // Presidents post 1994
             "1 EVEN Nelson Rolihlahla Mandela\n2 TYPE President\n2 DATE FROM 10 MAY 1994 TO 14 JUN 1999\n2 Source: [Wikipedia](https://en.wikipedia.org/wiki/President_of_South_Africa#Presidents_of_South_Africa_(1994%E2%80%93present))",
             "1 EVEN Thabo Mvuyelwa Mbeki\n2 TYPE President\n2 DATE FROM 14 JUN 1999 TO 24 SEP 2008\n2 Source: [Wikipedia](https://en.wikipedia.org/wiki/President_of_South_Africa#Presidents_of_South_Africa_(1994%E2%80%93present))",
