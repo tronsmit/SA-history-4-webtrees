@@ -1,0 +1,2 @@
+1.1.0 added SA Prime ministers, and presidents (1910-2021)
+1.0.0 initial version

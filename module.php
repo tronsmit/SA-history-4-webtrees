@@ -66,7 +66,7 @@ return new class extends AbstractModule implements ModuleCustomInterface, Module
      */
     public function customModuleSupportUrl(): string
     {
-        return 'https://github.com/tronsmit/SA-history-4-webtrees';
+        return 'https://github.com/tronsmit/SA-history-4-webtrees/issues';
     }
 
     /**
@@ -76,7 +76,7 @@ return new class extends AbstractModule implements ModuleCustomInterface, Module
      */
     public function customModuleVersion(): string
     {
-        return '1.0.0';
+        return '1.1.0';
     }
 
     /**
@@ -106,6 +106,7 @@ return new class extends AbstractModule implements ModuleCustomInterface, Module
             "1 EVEN Tuberculosis\n2 TYPE Epidemic\n2 DATE 1906\n2 NOTE Tuberculosis reaches epidemic proportions in South Africa. Source: [Wikipedia](https://en.wikipedia.org/wiki/1906_in_South_Africa)",
             "1 EVEN Smallpox\n2 TYPE Epidemic\n2 DATE 1912\n2 NOTE Smallpox outbreaks: The outbreak of smallpox is reported in the Malay Location, Johannesburg and cases of smallpox are discovered in Durban. Source: [Wikipedia](https://en.wikipedia.org/wiki/1912_in_South_Africa)",
             "1 EVEN Spanish flu\n2 TYPE Epidemic\n2 DATE 1918\n2 NOTE An estimated 500,000 people die from the Spanish flu epidemic in South Africa, the fifth hardest hit country in the world. Source: [Wikipedia](https://en.wikipedia.org/wiki/1918_in_South_Africa)",
+            "1 EVEN First covid-19 case in SA\n2 Epidemic\n2 DATE 5 MAR 2020\n2 NOTE Source: [NICD](https://www.nicd.ac.za/first-case-of-covid-19-coronavirus-reported-in-sa/)",
             // Wars
             "1 EVEN Britain declares war on the Netherlands\n2 TYPE War\n2 DATE 20 DEC 1780\n2 NOTE French troops arrive at the Cape Colony to guard it against the English. Source: [Wikipedia](https://en.wikipedia.org/wiki/1780s_in_South_Africa)",
             "1 EVEN French troops depart the Cape\n2 TYPE War\n2 DATE 1784\n2 NOTE Consequence of signing the [Treaty of Paris (3 Sep 1783)](https://en.wikipedia.org/wiki/Treaty_of_Paris_(1783)). Source: [Wikipedia](https://en.wikipedia.org/wiki/1780s_in_South_Africa)",
@@ -125,7 +126,6 @@ return new class extends AbstractModule implements ModuleCustomInterface, Module
             "1 EVEN First Dutch Reformed Church congregation founded\n2 TYPE Church founded\n2 DATE 18 AUG 1665\n2 NOTE  J. van Arkel is appointed the first minister. Source: [Wikipedia](https://en.wikipedia.org/wiki/1660s_in_South_Africa)",
             // Political change
             "1 EVEN Jan van Riebeeck arrives at the Cape\n2 TYPE Historical Event\n2 DATE 6 APR 1652\n2 NOTE Jan van Riebeeck arrives at the Cape in the *Drommedaris* and sets up a supply station and fortifications for the Dutch East India Company. Source: [Wikipedia](https://en.wikipedia.org/wiki/1650s_in_South_Africa)",
-            "1 EVEN Americans declare independece\n2 TYPE Historical Event\n2 DATE JUL 1776\n2 NOTE Source: [Wikipedia](https://en.wikipedia.org/wiki/History_of_the_United_States_(1776%E2%80%9389))",
             "1 EVEN The Cape becomes a British Colony\n2 TYPE Historical Event\n2 DATE 5 MAR 1797\n2 NOTE Source: [Wikipedia](https://en.wikipedia.org/wiki/1790s_in_South_Africa)",
             "1 EVEN South African Republic\n2 TYPE Historical Event\n2 DATE FROM 1852 TO 1902\n2 NOTE The South African Republic (Dutch: *Zuid-Afrikaansche Republiek*, ZAR), often referred to as the Transvaal and sometimes as the Republic of Transvaal, was an independent and internationally recognised country in Southern Africa from 1852 to 1902. Source: [Wikipedia](https://en.wikipedia.org/wiki/South_African_Republic)",
             "1 EVEN Orange Free State\n2 TYPE Historical Event\n2 DATE FROM 1854 TO 1902\n2 NOTE The Orange Free State (Dutch: *Oranje-Vrijstaat*, Afrikaans: *Oranje-Vrystaat*) was an independent *Boer* sovereign republic in southern Africa during the second half of the 19th century, and later a British colony and a province of the Union of South Africa. It is the historical precursor to the present-day Free State province. Source: [Wikipedia](https://en.wikipedia.org/wiki/Orange_Free_State)",
@@ -158,7 +158,26 @@ return new class extends AbstractModule implements ModuleCustomInterface, Module
             "1 EVEN Dutch East India Company goes bankrupt\n2 TYPE Historical Event\n2 DATE 1795\n2 NOTE The Dutch East India Company is in financial ruins. 29 January – Farmers expelled the officials of the Dutch East India Company and established an independent government at Graaff Reinet. 18 June - Swellendam follows Graaff Reinet and declares a republic under Hermanus Steyn. The Netherlands is invaded by the French under the leadership of Napoléon Bonaparte. A republic is declared by Dutch revolutionaires and the Prince of Orange flees to England. 16 September – British forces under General Sir James Henry Craig seizes the Cape Colony for the Stadtholder Prince William V of Orange. The republics of Graaff Reinet and Swellendam reject the British and the British army is sent in. The start of free trade was announced. Source: [Wikipedia](https://en.wikipedia.org/wiki/1790s_in_South_Africa)",
             "1 EVEN British settlers\n2 TYPE Historical Event\n2 DATE 1820\n2 NOTE 17 March - The first British settlers arrived in Table Bay, Cape Town on the *Nautilus* and the *Chapman*. 1 May - The *Albury* reaches Cape Town bringing settlers to Albany, South Africa. They arrive in Algoa Bay on 15 May. 2 May - *La Belle Alliance* reached Cape Town. She brought British settlers to Algoa Bay. 4000 British settlers started arriving in Algoa Bay (Port Elizabeth), they settled in Grahamstown and along the frontier. Source: [Wikipedia](https://en.wikipedia.org/wiki/1820_in_South_Africa)",
             "1 EVEN Great trek\n2 TYPE Historical Event\n2 DATE 1835\n2 NOTE *Voortrekkers* start leaving the Cape Colony. Source: [Wikipedia](https://en.wikipedia.org/wiki/1835_in_South_Africa)",
-            // Presidents
+            // Prime ministers of SA
+            "1 EVEN Louis Botha\n2 TYPE Prime minister\n2 DATE FROM 31 MAY 1910 TO 27 AUG 1919\n2 Source: [Wikipedia](https://en.wikipedia.org/wiki/Prime_Minister_of_South_Africa)",
+            "1 EVEN Jan Christiaan Smuts\n2 TYPE Prime minister\n2 DATE FROM 3 SEP 1919 TO 30 JUN 1924\n2 Source: [Wikipedia](https://en.wikipedia.org/wiki/Prime_Minister_of_South_Africa)",
+            "1 EVEN James Barry Munnik Hertzog\n2 TYPE Prime minister\n2 DATE FROM 30 JUN 1924 TO 5 SEP 1939\n2 Source: [Wikipedia](https://en.wikipedia.org/wiki/Prime_Minister_of_South_Africa)",
+            "1 EVEN Jan Christiaan Smuts\n2 TYPE Prime minister\n2 DATE FROM 5 SEP 1939 TO 4 JUN 1948\n2 Source: [Wikipedia](https://en.wikipedia.org/wiki/Prime_Minister_of_South_Africa)",
+            "1 EVEN Daniel Francois Malan\n2 TYPE Prime minister\n2 DATE FROM 4 JUN 1948 TO 30 NOV 1954\n2 Source: [Wikipedia](https://en.wikipedia.org/wiki/Prime_Minister_of_South_Africa)",           
+            "1 EVEN Johannes Gerhardus Strijdom\n2 TYPE Prime minister\n2 DATE FROM 30  NOV 1954 TO 24 AUG 1958\n2 Source: [Wikipedia](https://en.wikipedia.org/wiki/Prime_Minister_of_South_Africa)",
+            "1 EVEN Hendrik Frensch Verwoerd\n2 TYPE Prime minister\n2 DATE FROM 2 SEP 1958 TO 6 SEP 1966\n2 Source: [Wikipedia](https://en.wikipedia.org/wiki/Prime_Minister_of_South_Africa)",
+            "1 EVEN Balthazar Johannes Vorster\n2 TYPE Prime minister\n2 DATE FROM 13 SEP 1966 TO 2 OCT 1978\n2 Source: [Wikipedia](https://en.wikipedia.org/wiki/Prime_Minister_of_South_Africa)",
+            "1 EVEN Pieter Willem Botha\n2 TYPE Prime minister\n2 DATE FROM 9 OCT 1978 TO 14 SEP 1984\n2 Source: [Wikipedia](https://en.wikipedia.org/wiki/Prime_Minister_of_South_Africa)",
+            // Executive presidents pre 1994
+            "1 EVEN Pieter Willem Botha\n2 TYPE Executive President\n2 DATE FROM 14 SEP 1984 TO 15 AUG 1989\n2 Source: [Wikipedia](https://en.wikipedia.org/wiki/State_President_of_South_Africa#List_of_state_presidents_of_South_Africa)",
+            "1 EVEN Jan Christiaan Heunis\n2 TYPE Executive President (acting)\n2 DATE FROM 19 JAN 1989 TO 15 MAR 1989\n2 Source: [Wikipedia](https://en.wikipedia.org/wiki/State_President_of_South_Africa#List_of_state_presidents_of_South_Africa)",
+            "1 EVEN Frederik Willem de Klerk\n2 TYPE Executive President\n2 DATE FROM 15 AUG 1989 TO 10 MAY 1994\n2 Source: [Wikipedia](https://en.wikipedia.org/wiki/State_President_of_South_Africa#List_of_state_presidents_of_South_Africa)",
+            // Presidents post 1994
+            "1 EVEN Nelson Rolihlahla Mandela\n2 TYPE President\n2 DATE FROM 10 MAY 1994 TO 14 JUN 1999\n2 Source: [Wikipedia](https://en.wikipedia.org/wiki/President_of_South_Africa#Presidents_of_South_Africa_(1994%E2%80%93present))",
+            "1 EVEN Thabo Mvuyelwa Mbeki\n2 TYPE President\n2 DATE FROM 14 JUN 1999 TO 24 SEP 2008\n2 Source: [Wikipedia](https://en.wikipedia.org/wiki/President_of_South_Africa#Presidents_of_South_Africa_(1994%E2%80%93present))",
+            "1 EVEN Kgalema Petrus Motlanthe\n2 TYPE President\n2 DATE FROM 25 SEP 2008 TO 9 MAY 2009\n2 Source: [Wikipedia](https://en.wikipedia.org/wiki/President_of_South_Africa#Presidents_of_South_Africa_(1994%E2%80%93present))",
+            "1 EVEN Jacob Gedleyihlekisa Zuma\n2 TYPE President\n2 DATE FROM 9 MAY 2009 TO 14 FEB 2018\n2 Source: [Wikipedia](https://en.wikipedia.org/wiki/President_of_South_Africa#Presidents_of_South_Africa_(1994%E2%80%93present))",
+            "1 EVEN Matamela Cyril* Ramaphosa\n2 TYPE President\n2 DATE FROM 15 FEB 2018\n2 Source: [Wikipedia](https://en.wikipedia.org/wiki/President_of_South_Africa#Presidents_of_South_Africa_(1994%E2%80%93present))",
         ]);
     }
 };
