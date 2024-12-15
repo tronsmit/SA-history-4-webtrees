@@ -1,5 +1,5 @@
 # SA-history-4-webtrees
-Implements South African historic events for webtrees 2
+Implements South African historic events for webtrees 2.1.x (not 2.2 ready yet, but see issue)
 
 ## Installation
 
